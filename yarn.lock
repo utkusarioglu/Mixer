@@ -406,9 +406,20 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@utkusarioglu/m_namespace@git+https://github.com/utkusarioglu/m_namespace.git":
+  version "0.0.92"
+  resolved "git+https://github.com/utkusarioglu/m_namespace.git#198fec9fa1b00d21426963ef0c0a4d735023940b"
+
 "@utkusarioglu/m_namespace@https://github.com/utkusarioglu/m_namespace.git":
   version "0.0.91"
   resolved "https://github.com/utkusarioglu/m_namespace.git#1c72a72daca392fd22be9d27515149c851a0a860"
+
+"@utkusarioglu/m_state@https://github.com/utkusarioglu/m_state.git":
+  version "0.0.2"
+  resolved "https://github.com/utkusarioglu/m_state.git#3045e1ab6273b52cc0d40ff2606481af43f318ba"
+  dependencies:
+    "@utkusarioglu/m_namespace" "https://github.com/utkusarioglu/m_namespace.git"
+    "@utkusarioglu/state" "https://github.com/utkusarioglu/state.git"
 
 "@utkusarioglu/state@https://github.com/utkusarioglu/state.git":
   version "0.0.4"

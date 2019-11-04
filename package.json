@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -27,8 +27,8 @@
     "@types/node": "^8.0.14"
   },
   "dependencies": {
-    "@utkusarioglu/m_namespace": "https://github.com/utkusarioglu/m_namespace.git",
-    "@utkusarioglu/state": "https://github.com/utkusarioglu/state.git"
+    "@utkusarioglu/m_namespace": "git+https://github.com/utkusarioglu/m_namespace.git",
+    "@utkusarioglu/m_state": "https://github.com/utkusarioglu/m_state.git"
   },
   "repository": {
     "type": "git",
