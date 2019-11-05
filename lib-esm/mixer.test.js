@@ -12,6 +12,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 import { Parent } from "./mixer";
+import { M_Namespace } from "@utkusarioglu/m_namespace";
+import { M_State } from "@utkusarioglu/m_state";
 test("set_GlobalNamespace", function () {
     var namespace_input = "App/Random";
     var cls_sample = (function (_super) {
@@ -22,9 +24,31 @@ test("set_GlobalNamespace", function () {
             return _this;
         }
         return cls_sample;
-    }(Parent().with()));
+    }(Parent().with(M_Namespace)));
     var cls_instance = new cls_sample();
-    var namespace_return = cls_instance.getGlobalNamespace();
+    var namespace_return = cls_instance.get_GlobalNamespace();
     expect(namespace_return).toBe(namespace_input);
+});
+test("set_GlobalNamespace", function () {
+    var namespace_input = "App/Random";
+    var some_value = "some value";
+    var cls_sample = (function (_super) {
+        __extends(cls_sample, _super);
+        function cls_sample() {
+            var _this = _super.call(this) || this;
+            _this.set_GlobalNamespace(namespace_input);
+            _this.initialize_State({
+                SomeProp: some_value
+            });
+            return _this;
+        }
+        cls_sample.prototype.get_SomeProp = function () {
+            return this.get_State().get_Var("SomeProp");
+        };
+        return cls_sample;
+    }(Parent().with(M_Namespace, M_State)));
+    var cls_instance = new cls_sample();
+    var prop_return = cls_instance.get_SomeProp();
+    expect(prop_return).toStrictEqual(some_value);
 });
 //# sourceMappingURL=mixer.test.js.map
