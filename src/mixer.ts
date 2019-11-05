@@ -44,9 +44,6 @@ class MixinBuilder {
      * Service: Mixer
      */
     with(...mixins: any[]) {
-
-        console.log("mixins", mixins)
-
         return mixins.reduce((parent, mixin) => {
             const mixin_func = MixinBuilder.produce_ClassExpression(mixin);
             return mixin_func(parent)
