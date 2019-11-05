@@ -50,3 +50,35 @@ test("set_GlobalNamespace", () => {
 
     expect(prop_return).toStrictEqual(some_value);
 })
+
+
+test("dummy parent", () => {
+
+    const parent_class = class Parent {
+        constructor() {
+            console.log("this is coming from parent constructor")
+        }
+        parent_Method(): string {
+            return "-";
+        }
+    }
+
+    const child_class = class extends Parent(parent_class).with(M_Namespace) {
+        constructor() {
+            super();
+            this.set_GlobalNamespace("childns");
+        }
+        child_Method() {
+            return this.parent_Method();
+        }
+    }
+
+    const child_instance = new child_class();
+    const child_method_return = child_instance.child_Method();
+    const child_ns = child_instance.get_GlobalNamespace();
+
+    expect(child_method_return).toStrictEqual("-");
+
+    expect(child_ns).toStrictEqual("childns");
+
+});
