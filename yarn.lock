@@ -411,19 +411,20 @@
   resolved "git+https://github.com/utkusarioglu/m_namespace.git#198fec9fa1b00d21426963ef0c0a4d735023940b"
 
 "@utkusarioglu/m_namespace@https://github.com/utkusarioglu/m_namespace.git":
-  version "0.0.91"
-  resolved "https://github.com/utkusarioglu/m_namespace.git#1c72a72daca392fd22be9d27515149c851a0a860"
+  version "0.0.92"
+  uid "198fec9fa1b00d21426963ef0c0a4d735023940b"
+  resolved "https://github.com/utkusarioglu/m_namespace.git#198fec9fa1b00d21426963ef0c0a4d735023940b"
 
-"@utkusarioglu/m_state@https://github.com/utkusarioglu/m_state.git":
-  version "0.0.2"
-  resolved "https://github.com/utkusarioglu/m_state.git#3045e1ab6273b52cc0d40ff2606481af43f318ba"
-  dependencies:
-    "@utkusarioglu/m_namespace" "https://github.com/utkusarioglu/m_namespace.git"
-    "@utkusarioglu/state" "https://github.com/utkusarioglu/state.git"
+"@utkusarioglu/starel-globals@https://github.com/utkusarioglu/StarelGlobals.git":
+  version "0.0.6"
+  resolved "https://github.com/utkusarioglu/StarelGlobals.git#863937ba511c576387c7ef792189b294c4f99a9c"
 
 "@utkusarioglu/state@https://github.com/utkusarioglu/state.git":
-  version "0.0.4"
-  resolved "https://github.com/utkusarioglu/state.git#edcf9d7b070e2a1dd60eb3e2347eefa756e78282"
+  version "0.0.9"
+  resolved "https://github.com/utkusarioglu/state.git#e5d01f8c3fb9a7e11a4902136389cc62da11e680"
+  dependencies:
+    "@utkusarioglu/m_namespace" "https://github.com/utkusarioglu/m_namespace.git"
+    "@utkusarioglu/starel-globals" "https://github.com/utkusarioglu/StarelGlobals.git"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"

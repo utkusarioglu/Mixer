@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -15,20 +15,20 @@
     "test": "jest"
   },
   "devDependencies": {
-    "typescript": "^3.6.4",
+    "@types/jest": "24.0.21",
+    "@types/node": "^8.0.14",
+    "dts-bundle": "0.7.3",
     "jest": "24.9.0",
     "shx": "^0.3.2",
     "ts-jest": "24.1.0",
     "ts-loader": "6.2.1",
-    "dts-bundle": "0.7.3",
+    "typescript": "^3.6.4",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "@types/jest": "24.0.21",
-    "@types/node": "^8.0.14"
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "@utkusarioglu/m_namespace": "git+https://github.com/utkusarioglu/m_namespace.git",
-    "@utkusarioglu/m_state": "https://github.com/utkusarioglu/m_state.git"
+    "@utkusarioglu/state": "https://github.com/utkusarioglu/state.git"
   },
   "repository": {
     "type": "git",
