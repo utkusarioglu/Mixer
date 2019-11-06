@@ -1,5 +1,5 @@
 import { Parent } from "./mixer";
-import { M_Namespace } from "@utkusarioglu/m_namespace";
+import { M_Namespace } from "@utkusarioglu/namespace";
 import { M_State } from "@utkusarioglu/state";
 
 
