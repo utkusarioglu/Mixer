@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "clean": "shx rm -rf _bundles lib lib-esm index.d.ts package-lock.json",
-    "declaration": "dts-bundle --name @utkusarioglu/mixer --main lib/mixer.d.ts --out ../index.d.ts",
+    "declaration": "dts-bundle --name @utkusarioglu/mixer --main lib/index.d.ts --out ../index.d.ts",
     "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack && npm run declaration",
     "test": "jest"
   },
@@ -26,7 +26,6 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/utkusarioglu/Mixer.git"

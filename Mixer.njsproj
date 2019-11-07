@@ -42,6 +42,9 @@
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\mixer.test.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

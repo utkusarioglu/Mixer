@@ -15,8 +15,7 @@
     "declarationMap": false /* Generates a sourcemap for each corresponding '.d.ts' file. */
   },
   "include": [
-    "src/mixer.ts",
-    "src/mixer.test.ts" // I unfortunately have to put this here to be able to type check
+    "src/index.ts"
   ],
   "exclude": [
     "node_modules"
