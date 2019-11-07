@@ -1,6 +1,8 @@
 import { Parent } from "./mixer";
 import { M_Namespace } from "@utkusarioglu/namespace";
 import { M_State } from "@utkusarioglu/state";
+import { M_Controller } from "@utkusarioglu/controller";
+import { M_Library } from "@utkusarioglu/library";
 
 
 test("set_GlobalNamespace", () => {
@@ -63,7 +65,12 @@ test("dummy parent", () => {
         }
     }
 
-    const child_class = class extends Parent(parent_class).with(M_Namespace) {
+    const child_class = class extends Parent(parent_class).with(
+        M_Namespace,
+        M_Library,
+        M_Controller,
+        M_State
+    ) {
         constructor() {
             super();
             this.set_GlobalNamespace("childns");

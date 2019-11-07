@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -25,6 +25,12 @@
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@utkusarioglu/namespace": "https://github.com/utkusarioglu/namespace.git",
+    "@utkusarioglu/state": "https://github.com/utkusarioglu/state.git",
+    "@utkusarioglu/library": "https://github.com/utkusarioglu/Library.git",
+    "@utkusarioglu/controller": "https://github.com/utkusarioglu/Controller.git"
   },
   "repository": {
     "type": "git",
