@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {

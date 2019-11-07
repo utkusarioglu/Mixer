@@ -65,8 +65,6 @@ class MixinBuilder {
      */
     private static produce_ClassExpression(mixin_class: any) {
 
-        console.log("loading mixin:\n", mixin_class.constructor.name)
-
         const extended_class_def = (extender_class: any) => {
             const extended_class = class extends extender_class { }
 
