@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/utkusarioglu/Mixer.git"
+    "url": "https://github.com/utkusarioglu/Mixer.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/utkusarioglu/Mixin/issues"
+    "url": "https://github.com/utkusarioglu/Mixer/issues"
   },
-  "homepage": "https://github.com/utkusarioglu/Mixin#readme"
+  "homepage": "https://github.com/utkusarioglu/Mixer#readme"
 }
