@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -26,6 +26,7 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/utkusarioglu/Mixer.git"
