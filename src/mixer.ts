@@ -1,4 +1,21 @@
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	IMPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
+
 import { Constructor } from "./t_mixer";
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	EXPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
 
 /**
  * In case mixins are to be provided to the child, Super accepts the parent as 
@@ -44,6 +61,9 @@ class MixinBuilder {
      * Service: Mixer
      */
     with(...mixins: any[]) {
+
+        console.log("Mixins\n", mixins)
+
         return mixins.reduce((parent, mixin) => {
             const mixin_func = MixinBuilder.produce_ClassExpression(mixin);
             return mixin_func(parent)

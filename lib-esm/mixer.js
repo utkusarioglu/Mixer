@@ -5,6 +5,7 @@ class MixinBuilder {
         };
     }
     with(...mixins) {
+        console.log("Mixins\n", mixins);
         return mixins.reduce((parent, mixin) => {
             const mixin_func = MixinBuilder.produce_ClassExpression(mixin);
             return mixin_func(parent);
