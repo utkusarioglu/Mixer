@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/mixer",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A Mixin manager",
   "main": "index.js",
   "author": {
@@ -12,11 +12,15 @@
     "clean": "shx rm -rf _bundles lib lib-esm index.d.ts package-lock.json",
     "declaration": "dts-bundle --name @utkusarioglu/mixer --main lib/index.d.ts --out ../index.d.ts",
     "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack && npm run declaration",
-    "test": "jest"
+    "test": "jest",
+    "build-publish": "npm version patch --force && npm run build && npm publish"
   },
   "devDependencies": {
     "@types/jest": "24.0.21",
     "@types/node": "^8.0.14",
+    "@utkusarioglu/controller": "^0.0.60",
+    "@utkusarioglu/namespace": "^0.0.5",
+    "@utkusarioglu/state": "^0.0.19",
     "dts-bundle": "0.7.3",
     "jest": "24.9.0",
     "shx": "^0.3.2",
